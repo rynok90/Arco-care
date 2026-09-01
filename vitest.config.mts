@@ -13,6 +13,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(root, "./src"),
+      "next/link": path.resolve(root, "./tests/stubs/next-link.tsx"),
     },
   },
 });

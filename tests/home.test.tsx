@@ -4,10 +4,10 @@ import { describe, expect, it } from "vitest";
 import HomePage from "../src/app/page";
 
 describe("home page", () => {
-  it("renders Arco Care — G00 and a link to /standby.html", () => {
+  it("renders kit copy and no longer shows the G00 placeholder", () => {
     const html = renderToStaticMarkup(createElement(HomePage));
 
-    expect(html).toContain("Arco Care — G00");
-    expect(html).toMatch(/<a[^>]*href="\/standby\.html"[^>]*>/);
+    expect(html).not.toContain("Arco Care — G00");
+    expect(html).toContain("Tu clínica, con tu nombre");
   });
 });

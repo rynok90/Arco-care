@@ -2,7 +2,7 @@
 
 **Arco Care** es el SaaS de clínicas veterinarias de **MERBAL** en México: agenda, expedientes y operación de la clínica con la marca del veterinario.
 
-Este repositorio es el esqueleto de la aplicación web (hito **G00**). El kit de marketing vive en `ArcoCare-landing/` y no forma parte de esta app.
+Este repositorio es la aplicación web de **Arco Care**. El kit de marketing original vive en `ArcoCare-landing/` (referencia de copy y diseño; no se modifica).
 
 ## Requisitos
 
@@ -17,7 +17,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Abre [http://localhost:3000](http://localhost:3000). La home muestra **Arco Care — G00**. La página de mantenimiento está en `/standby.html`.
+Abre [http://localhost:3000](http://localhost:3000). La home es el sitio de marketing (tagline **Tu clínica, con tu nombre.**). Rutas: `/`, `/producto`, `/fochi`, `/tour`, `/precios`, `/contacto`, `/privacidad`. La página de mantenimiento está en `/standby.html`.
 
 No hace falta una base de datos ni un `SESSION_SECRET` real para arrancar el home.
 
