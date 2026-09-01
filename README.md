@@ -1,0 +1,47 @@
+# Arco Care
+
+**Arco Care** es el SaaS de clínicas veterinarias de **MERBAL** en México: agenda, expedientes y operación de la clínica con la marca del veterinario.
+
+Este repositorio es el esqueleto de la aplicación web (hito **G00**). El kit de marketing vive en `ArcoCare-landing/` y no forma parte de esta app.
+
+## Requisitos
+
+- Node.js 20 o superior
+- npm
+
+## Instalar y correr en local
+
+```bash
+npm install
+cp .env.example .env
+npm run dev
+```
+
+Abre [http://localhost:3000](http://localhost:3000). La home muestra **Arco Care — G00**. La página de mantenimiento está en `/standby.html`.
+
+No hace falta una base de datos ni un `SESSION_SECRET` real para arrancar el home.
+
+En PowerShell, si `cp` no está disponible:
+
+```powershell
+npm install
+Copy-Item .env.example .env
+npm run dev
+```
+
+## Scripts
+
+| Comando | Qué hace |
+| --- | --- |
+| `npm install` | Instala dependencias |
+| `npm run dev` | Servidor de desarrollo |
+| `npm test` | Corre los tests del esqueleto |
+| `npm run build` | Compila para producción |
+| `npm start` | Sirve el build de producción |
+
+## Variables de entorno
+
+Copia `.env.example` a `.env`. Incluye:
+
+- `DATABASE_URL` — conexión PostgreSQL para Prisma
+- `SESSION_SECRET` — reservado para sesiones futuras

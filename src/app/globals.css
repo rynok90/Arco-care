@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f3ee;
+  --foreground: #0e1412;
+  --clinic: #1f6b57;
+  --amber: #e8a54b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-clinic: var(--clinic);
+  --color-amber: var(--amber);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), "Segoe UI", system-ui, sans-serif;
+}

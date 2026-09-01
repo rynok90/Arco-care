@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volvemos pronto — Arco Care</title>
+    <style>
+      :root {
+        --paper: #f6f3ee;
+        --paper-2: #efe8dc;
+        --cream: #fffaf3;
+        --ink: #0e1412;
+        --muted: #5c6b66;
+        --clinic: #1f6b57;
+        --clinic-deep: #163d33;
+        --amber: #e8a54b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, "Segoe UI", system-ui, sans-serif;
+      }
+
+      .shell {
+        width: min(100%, 36rem);
+        margin: auto;
+      }
+
+      .card {
+        background: var(--cream);
+        border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+        border-radius: 1.5rem;
+        padding: clamp(1.5rem, 5vw, 2.5rem);
+        box-shadow: 0 12px 40px color-mix(in srgb, var(--ink) 8%, transparent);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .mark {
+        width: 2.5rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+      }
+
+      .wordmark {
+        font-weight: 650;
+        letter-spacing: -0.03em;
+        font-size: 1.15rem;
+      }
+
+      .holding {
+        margin: 0.35rem 0 0;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        margin: 1.5rem 0 0.75rem;
+        font-size: clamp(1.75rem, 7vw, 2.4rem);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        color: var(--clinic-deep);
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+        font-size: 1rem;
+      }
+
+      .bar {
+        height: 0.35rem;
+        width: 3.5rem;
+        margin-top: 1.5rem;
+        border-radius: 999px;
+        background: var(--amber);
+      }
+
+      a {
+        color: var(--clinic);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <article class="card">
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="10" fill="#1f6b57" />
+            <path
+              d="M7 21 C12 10, 20 10, 25 21"
+              fill="none"
+              stroke="#e8a54b"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            />
+            <circle cx="16" cy="22.5" r="1.6" fill="#fffaf3" />
+          </svg>
+          <div>
+            <div class="wordmark">Arco Care</div>
+            <p class="holding">
+              Un producto de <a href="https://merbal.lat">MERBAL</a>
+            </p>
+          </div>
+        </div>
+        <h1>Volvemos pronto</h1>
+        <p>
+          Estamos en mantenimiento. Vuelve en un momento — tu clínica y tus
+          pacientes siguen siendo la prioridad.
+        </p>
+        <div class="bar" aria-hidden="true"></div>
+      </article>
+    </main>
+  </body>
+</html>
